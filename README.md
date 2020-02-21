@@ -1,6 +1,6 @@
 # LaunchHelper
 
-通过此Jar可以实现不用添加任何命令行参数载入Java agent并启动另一个可执行Jar，用于在Multicraft面板服使用[authlib-injector](https://github.com/yushijinhun/authlib-injector)。
+通过LaunchHelper的Jar可以实现不用添加任何命令行参数载入Java agent并启动另一个可执行Jar，用于在Multicraft面板服使用[authlib-injector](https://github.com/yushijinhun/authlib-injector)。
 
 ## 构建
 
@@ -39,5 +39,5 @@ mvn clean package
 
 如果出现`java.lang.UnsatisfiedLinkError`的异常：
 
-* 依赖的`tools.jar`不能跨平台使用，确保`tools.jar`是来自同一平台的；
+* 依赖的`tools.jar`不能跨平台使用，要确保`tools.jar`是来自同一平台的；
 * 如果用JRE运行，相关动态链接库需要能被链接到。
