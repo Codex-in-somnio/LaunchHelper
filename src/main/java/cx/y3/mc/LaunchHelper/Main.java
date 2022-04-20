@@ -1,5 +1,7 @@
 package cx.y3.mc.LaunchHelper;
 
+//import com.sun.tools.attach.VirtualMachine;
+
 import com.sun.tools.attach.VirtualMachine;
 
 import java.io.File;
@@ -99,18 +101,24 @@ public class Main {
 			log(e.getLocalizedMessage());
 			return false;
 		}
+
 		Manifest manifest;
 		Attributes attributes;
 		String className;
+
 		try {
+
 			manifest = jarFile.getManifest();
 			attributes = manifest.getMainAttributes();
 			className = attributes.getValue(Attributes.Name.MAIN_CLASS);
 			jarFile.close();
+
 		} catch (IOException e) {
+
 			log("Failed to get manifest from the specified executable jar");
 			log(e.getLocalizedMessage());
 			return false;
+
 		}
 
 		File file = new File(execJarPath);
