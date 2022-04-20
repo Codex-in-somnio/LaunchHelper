@@ -33,6 +33,7 @@
 * LaunchHelper不能跨平台使用，需要使用和平台对应的Jar，跨平台会出现`java.lang.UnsatisfiedLinkError`；
 * 如果在Windows环境下用JRE运行，相关动态链接库（`attach.dll`）需要确保能被链接到，经测试发现Windows环境下JRE可能不包含此DLL；遇到这种情况时会出现`no providers installed`的错误消息，可以从JDK安装目录下找到`jre/bin/attach.dll`复制一份到工作目录（服务端根目录）然后启动；
 * 目前只测试过Java 8，只有针对Java 8的版本，其他Java版本不保证可用。
+* Java9及以上版本需添加-Djdk.attach.allowAttachSelf=true参数
 
 ## 从源码构建
 
