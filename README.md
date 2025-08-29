@@ -1,3 +1,7 @@
+>**⚠ Depreciated Project ⚠**  
+>LaunchHelper-Revived is only made so that it works with later versions.  
+>It is recommended to use **[Wrapidly](https://github.com/RayfieldMC/Wrapidly)** which has more features.
+
 # LaunchHelper (Java 21 Fork 🚀)
 
 This is a modernized fork of [Codex-in-somnio/LaunchHelper](https://github.com/Codex-in-somnio/LaunchHelper), updated to work on **Java 17+ / Java 21** and inside containerized environments (e.g. **Pterodactyl**, **Multicraft**).  
@@ -96,3 +100,4 @@ target/LaunchHelper-{version}.jar
 > ```
 >
 > The compiled JAR will be at `target/LaunchHelper-{version}.jar`.
+
